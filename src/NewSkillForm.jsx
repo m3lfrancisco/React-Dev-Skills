@@ -24,7 +24,6 @@ function NewSkillForm({addSkill}) {
                 <label>Skill</label>
                     <input name="name" 
                         onChange={handleAddSkill}
-                        // onChange={(evt => setNewSkill(evt.target.value))}
                         value={newSkill.name}
                         placeholder="New Skill"
                         required

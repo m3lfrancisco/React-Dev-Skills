@@ -5,7 +5,7 @@ function SkillListItem({skill, index}) {
         <li
             className="SkillListItem"
         >
-            {skill.name}<span className="level">LEVEL{skill.level}</span>
+            {skill.name}<span className="level">LEVEL {skill.level}</span>
         </li>
     );
 }
