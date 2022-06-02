@@ -15,12 +15,16 @@ function App() {
     ]
   );
 
+  function addSkill(skill) {
+    setSkills([...skills, skill])
+  }
+
   return (
     <div className="App">
       <h1 className="teal-text">React Dev Skills</h1>
       <SkillList skills={skills}/>
-      <hr></hr>
-      <NewSkillForm/>
+      <hr />
+      <NewSkillForm addSkill={addSkill} />
     </div>
   );
 }
