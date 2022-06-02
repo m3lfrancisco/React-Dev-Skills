@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import './SkillListItem.css'
+import './NewSkillForm.css'
+import SkillList from './SkillList';
+import NewSkillForm from './NewSkillForm'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const skills = [
+    { name: 'HTML', level: 5 },
+    { name: 'CSS', level: 3 },
+    { name: 'JavaScript', level: 4 },
+    { name: 'Python', level: 2 }
+  ];
+    return (
+      <div className="App">
+        <h1 className="teal-text">React Dev Skills</h1>
+        <SkillList skills={skills}/>
+        <hr></hr>
+        <NewSkillForm/>
+      </div>
+    );
 }
 
 export default App;
